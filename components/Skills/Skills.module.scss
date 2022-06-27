@@ -1,0 +1,59 @@
+.Skills {
+  min-height: 80vh;
+  width: 100%;
+  background-color: #fff;
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    .softskills {
+      border-bottom: 40px solid #75f5bd;
+      border-left: 8px solid transparent;
+      border-right: 14px solid transparent;
+      height: 0;
+      margin-top: 2rem;
+      transform: rotate(-6deg);
+      -webkit-transform: rotate(-6deg);
+      -moz-transform: rotate(-6deg);
+      ul {
+        transform: rotate(6deg);
+        -webkit-transform: rotate(6deg);
+        -moz-transform: rotate(6deg);
+        padding: 1rem;
+        li {
+          margin: 0.5rem 0;
+          font-size: 1rem;
+     
+        }
+      }
+    }
+    .hardskills {
+      border-bottom: 40px solid rgb(247, 158, 125);
+      border-left: 8px solid transparent;
+      border-right: 14px solid transparent;
+      height: 0;
+      margin-top: 2rem;
+      transform: rotate(-6deg);
+      -webkit-transform: rotate(-6deg);
+      -moz-transform: rotate(-6deg);
+      ul {
+        transform: rotate(6deg);
+        -webkit-transform: rotate(6deg);
+        -moz-transform: rotate(6deg);
+        padding: 1rem;
+        li {
+          margin: 0.5rem 0;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

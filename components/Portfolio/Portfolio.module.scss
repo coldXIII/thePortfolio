@@ -1,0 +1,70 @@
+.Portfolio {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  .title {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 6rem;
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+    }
+  }
+  .tabs {
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+
+    span {
+      margin: 0 0.5rem;
+      padding: 0.8rem 1.5rem;
+      border: 1px solid #aaa;
+      border-radius: 0.2rem;
+      transition: all 0.3s ease;
+      cursor: pointer;
+
+      &:hover:nth-child(1) {
+        background-color: #ccc;
+      }
+      &:hover:nth-child(2) {
+        box-shadow: 1px 1px 5px #3fb984;
+        border: 1px solid #3fb984;
+        background-color: #3fb984;
+      }
+      &:hover:nth-child(3) {
+        box-shadow: 1px 1px 5px #00ccef;
+        border: 1px solid #00ccef;
+        background-color: #00ccef;
+      }
+    }
+  }
+  .gallery {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    background-color: #fff;
+    .image {
+      position: relative;
+    }
+    .tooltipbox {
+      position: absolute;
+      top: 8.1%;
+      left: 0.8%;
+      transform: translateX(-1%);
+      width: 50%;
+      height: 255px;
+      background-color: #fff;
+      padding: 0.5rem;
+      border: 1px solid #3fb984;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 0.5rem;
+   
+    
+
+    }
+  }
+}

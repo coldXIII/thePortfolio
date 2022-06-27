@@ -1,0 +1,19 @@
+.Contacts {
+  width: 100%;
+  min-height: 50vh;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  li{
+    margin: 1rem 0;
+    &:hover a{
+      color: rgb(157, 216, 216);
+    }
+
+  }
+}

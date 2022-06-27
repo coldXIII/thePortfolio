@@ -1,0 +1,41 @@
+.Education {
+  min-height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #fff;
+  .inner {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    border-bottom: 180px solid #3fb984 ;
+    border-left: 8px solid transparent;
+    border-right: 14px solid transparent;
+    height: 0;
+    margin-top: 60px;
+    transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    h1 {
+      text-align: left;
+      font-size: 2.5rem;
+      font-weight: 900;
+
+      transform: rotate(-3deg);
+      -webkit-transform: rotate(-3deg);
+      -moz-transform: rotate(-3deg);
+    }
+    p {
+      font-size: 1rem;
+      letter-spacing: 0.05rem;
+
+      transform: rotate(-3deg);
+      -webkit-transform: rotate(-3deg);
+      -moz-transform: rotate(-3deg);
+    }
+  }
+}
