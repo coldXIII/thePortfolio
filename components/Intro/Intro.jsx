@@ -12,7 +12,6 @@ const Intro = () => {
         </div>
         <div className={styles.image}>
           <Image src="/ava.jpg" alt="avatar" width="400px" height="400px" />
-          {/* <img src="ava.jpg" alt="avatar" /> */}
         </div>
       </div>
     </section>

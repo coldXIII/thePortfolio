@@ -19,7 +19,7 @@
 
     span {
       margin: 0 0.5rem;
-      padding: 0.8rem 1.5rem;
+      padding: 0.5rem 1.25rem;
       border: 1px solid #aaa;
       border-radius: 0.2rem;
       transition: all 0.3s ease;
@@ -46,25 +46,5 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     background-color: #fff;
-    .image {
-      position: relative;
-    }
-    .tooltipbox {
-      position: absolute;
-      top: 8.1%;
-      left: 0.8%;
-      transform: translateX(-1%);
-      width: 50%;
-      height: 255px;
-      background-color: #fff;
-      padding: 0.5rem;
-      border: 1px solid #3fb984;
-      font-size: 1rem;
-      font-weight: 500;
-      border-radius: 0.5rem;
-   
-    
-
-    }
   }
 }

@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Portfolio.module.scss';
 import Image from 'next/dist/client/image';
+import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import myProjects from '../../store/myProjects';
 
 const Portfolio = () => {
-  const [showTooltip, setShowTooltip] = useState(null);
   const [projects, setProjects] = useState(myProjects);
-  const toggleShowTooltip = (index) => {
-    setShowTooltip(index);
-  };
 
   const filterProjects = (category) => {
     const filteredProjects = myProjects.filter((currenProjects) => {
@@ -31,13 +28,14 @@ const Portfolio = () => {
       <div className={styles.gallery}>
         {projects.map((item, index) => (
           <div className={styles.image} key={index}>
-            <span
-              className={styles.tooltip}
-              onClick={() => toggleShowTooltip(index)}
-              style={{ cursor: 'pointer', marginBottom: '1rem' }}
-            >
-              💬
-            </span>
+            <Tippy content={item.tooltip}>
+              <span
+                className={styles.tooltip}
+                style={{ cursor: 'pointer', marginBottom: '1rem' }}
+              >
+                💬
+              </span>
+            </Tippy>
             <a href={item.link} target="_blank" rel="noreferrer">
               <Image
                 src={item.image}
@@ -46,11 +44,6 @@ const Portfolio = () => {
                 height="280px"
                 style={{ borderRadius: '1rem' }}
               />
-              {showTooltip === index && (
-                <div className={styles.tooltipbox}>
-                  <p>{item.tooltip}</p>
-                </div>
-              )}
             </a>
           </div>
         ))}
